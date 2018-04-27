@@ -1,0 +1,72 @@
+body{
+  margin:0;
+  padding:0;
+  background:rgb(242, 212, 122);
+}
+
+
+
+.face{
+   height:500px;
+   width: 300px;
+   border-radius: 45%;
+   position:absolute;
+   margin:0 50px;
+   top:40px;
+   background:
+   radial-gradient(ellipse at 50% 50%, #ebf08a 20%, transparent 50%);
+  border:1px solid #dab079;
+
+}
+
+
+
+
+
+.eye.right{
+  height:30px;
+  width: 60px;
+  border-radius: 50%;
+  position:absolute;
+  margin:280px 230px;
+  top:40px;
+  background:
+  radial-gradient(ellipse at 50% 70%, rgb(162, 13, 13) 20%, transparent 50%);
+ border:6px solid #dab079;
+}
+
+
+.eye.left{
+  height:30px;
+  width: 100px;
+  border-radius: 50%;
+  position:absolute;
+  margin:280px 30px;
+  top:40px;
+  background:
+  radial-gradient(ellipse at 50% 70%, rgb(162, 13, 13) 20%, transparent 50%);
+ border:6px solid #dab079;
+}
+
+
+
+
+.nose.top{
+  height:130px;
+  width: 30px;
+  position:absolute;
+  margin:330px 150px;
+  top:40px;
+  background:
+  radial-gradient(ellipse at 50% 70%, rgb(162, 13, 13) 20%, transparent 50%);
+ border:2px 0 0 0 solid #dab079;
+}
+
+
+.moon{
+width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ box-shadow: 15px 16px 0 0 rgb(162, 13, 13);
+ margin:100px 100px;
+}

@@ -1,0 +1,518 @@
+body{
+margin:0;
+padding:0;
+background:black
+}
+
+
+.circle1{
+height:100px;
+width:50px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:55px;
+left:335px;
+border-radius: 50%;
+transform:rotateX(85deg);
+
+}
+
+.circle2{
+height:100px;
+width:70px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:75px;
+left:325px;
+border-radius: 50%;
+transform:rotateX(85deg);
+
+}
+
+.circle3{
+height:100px;
+width:110px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:95px;
+left:305px;
+border-radius: 50%;
+transform:rotateX(85deg);
+
+}
+
+.circle4{
+height:100px;
+width:140px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:115px;
+left:290px;
+border-radius: 50%;
+transform:rotateX(85deg);
+
+}
+
+.circle5{
+height:100px;
+width:110px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:135px;
+left:305px;
+border-radius: 50%;
+transform:rotateX(85deg);
+
+}
+
+.circle6{
+height:100px;
+width:80px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:155px;
+left:325px;
+border-radius: 50%;
+transform:rotateX(85deg);
+
+}
+
+
+.circle7{
+height:100px;
+width:50px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:175px;
+left:335px;
+border-radius: 50%;
+transform:rotateX(85deg);
+
+}
+
+
+
+.circle8{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:200px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle9{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:215px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle10{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:230px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+
+.circle11{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:245px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle12{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:260px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle13{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:275px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle14{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:290px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle15{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:305px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle16{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:320px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle17{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:335px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle18{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:350px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+
+.circle19{
+height:100px;
+width:300px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:370px;
+left:220px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle20{
+height:100px;
+width:150px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:390px;
+left:300px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle21{
+height:100px;
+width:140px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:410px;
+left:305px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle22{
+height:100px;
+width:130px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:430px;
+left:310px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+
+.circle23{
+height:100px;
+width:120px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:450px;
+left:315px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+
+.circle24{
+height:100px;
+width:110px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:470px;
+left:320px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle25{
+height:100px;
+width:100px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:490px;
+left:325px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle26{
+height:100px;
+width:90px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:510px;
+left:330px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle27{
+height:100px;
+width:80px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:530px;
+left:335px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle28{
+height:100px;
+width:70px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:550px;
+left:340px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+.circle29{
+height:100px;
+width:60px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:570px;
+left:345px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+.circle30{
+height:100px;
+width:50px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:590px;
+left:350px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+.circle31{
+height:100px;
+width:40px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:610px;
+left:355px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+.circle32{
+height:100px;
+width:40px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:630px;
+left:355px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+
+.circle33{
+height:100px;
+width:30px;
+background: transparent;
+border:15px solid #fff;
+
+
+position:absolute;
+top:650px;
+left:360px;
+border-radius: 50%;
+transform:rotateX(86deg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}

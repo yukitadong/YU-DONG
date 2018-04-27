@@ -1,0 +1,50 @@
+body{
+  margin:0;
+  padding:0;
+  background:purple;
+}
+
+
+p{
+  font-family: "Times New Roman", Times, serif;
+  background:orange;
+  text-align: center;
+}
+
+
+.right{
+  background:
+radial-gradient(ellipse at 70% 20%,rgb(242, 174, 115) 50%, white 90%);
+ border:1px solid #dab079;
+  height:179px;
+  width: 250px;
+  border-radius: 0% 45% 45% 0%;
+  position:absolute;
+  margin:0 280px;
+  top:200px;
+ border:10px solid black;
+ display: block;
+  transform: rotate(90deg);
+
+}
+
+
+
+
+
+
+.right2{
+  background:
+  radial-gradient(ellipse at 70% 20%,rgb(242, 174, 115) 50%, white 90%);
+   border:1px solid #dab079;
+  height:179px;
+  width: 260px;
+  border-radius: 0% 45% 45% 0%;
+  position:absolute;
+  margin:0 375px;
+  top:205px;
+ border:10px solid black;
+ display: block;
+ transform: rotate(90deg);
+ z-index: -1
+}
