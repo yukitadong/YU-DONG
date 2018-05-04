@@ -1,0 +1,402 @@
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+
+</head>
+<style>
+
+
+body{
+  background:green;
+position: absolute;;
+  left:50%;
+  top:40px;
+
+}
+
+section { display: grid;
+  grid-template-columns: 400px;
+  grid-auto-rows: minmax(20px, auto);
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  position :relative;
+
+
+}
+
+
+ .big{
+  background:#c7c7bf;
+  border-style: outset;
+border: 2px solid white;
+height:600px;
+ width:400px;
+
+
+}
+
+
+
+.blue{
+  background:linear-gradient(to right, rgb(10, 25, 128), rgb(150, 236, 255));;
+  border: 2px solid white;
+
+  grid-column: 1 / 3;
+ grid-row: 1;
+ margin-top: 1px;
+ height:30px;
+ width:396px
+
+}
+
+
+
+
+.close{
+  width: 15px;
+  height: 15px;
+  background: #c7c7bf;
+  border: 2px solid rgb(255, 255, 255);
+  border-style: outset;
+  position: absolute;
+  left:370px;
+  top:10px
+}
+
+
+
+.max{
+  width: 15px;
+  height: 15px;
+  background: #c7c7bf;
+  border: 2px solid rgb(255, 255, 255);
+  border-style: outset;
+  border-style: inset;
+  position: absolute;
+  left:345px;
+  top:10px
+}
+
+
+
+
+
+.hide{
+  width: 15px;
+  height: 15px;
+  background: #c7c7bf;
+  border: 2px solid rgb(255, 255, 255);
+  border-style: outset;
+  position: absolute;
+  left:320px;
+  top:10px
+}
+
+
+
+
+
+
+
+
+
+h3{
+  font-family:  'VT323', monospace;
+  margin-left: 20px;
+  position:relative;
+}
+
+
+
+
+
+h1{
+  font-family:  'Press Start 2P', cursive;
+  margin-left: 4px;
+  margin-top: 12px;
+  position:relative;
+  padding:0.5px;
+  font-size:23px;
+  color:red;
+
+}
+
+
+h2{
+  font-family:  'Press Start 2P', cursive;
+  margin-left: 4px;
+  margin-top: 12px;
+  position:relative;
+  padding:0.5px;
+  font-size:23px;
+  color:red;
+
+}
+
+
+
+
+.game {
+  position:absolute;
+  top:30px;
+  left:25px;
+}
+
+
+.white{
+  background: white;
+  grid-column: 1 / 3;
+ grid-row: 1;
+ margin-top: 1px;
+ height:500px;
+ width:394px;
+ margin-left:3px;
+}
+
+.grey{
+  background: #c7c7bf;
+ height:504px;
+ width:390px;
+ margin-left: 6px;
+ margin-top:6px;
+ position: absolute;
+
+}
+.darkgrey{
+  border: solid 5px #dddddd;
+  border-style: inset;
+ height:80px;
+ width:350px;
+ margin-left: 20px;
+ margin-top:20px;
+ position: absolute;
+
+}
+
+ .left{
+  border: solid 3px #e9e9e9;
+   border-style: inset;
+  height:45px;
+  width:75px;
+  margin-left: 15px;
+  margin-top:15px;
+  position: absolute;
+  background: rgb(22, 10, 6, 0.8);
+}
+
+  .right{
+    border: solid 3px #e9e9e9;
+     border-style: inset;
+    height:45px;
+    width:75px;
+    margin-left: 255px;
+    margin-top:15px;
+    position: absolute;
+    background: rgb(22, 10, 6, 0.8);
+}
+
+    .middle{
+      margin-left:176px;
+      margin-top:38px;
+      position: absolute;
+}
+
+
+
+
+.grids{
+  grid-template-columns:repeat(9,38.8px);
+  grid-template-rows: repeat(9,38.8px);
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  border: solid 7px #e9e9e9;
+   border-style: inset;
+  margin-left:15px;
+  margin-top:130px;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  display: grid;
+
+}
+
+
+h4{
+  position: absolute;
+  left:3px;
+  top:-14px;
+  font-family:'Press Start 2P', cursive;
+  font-size: 10px;
+}
+
+
+h5{
+  position: absolute;
+  left:3px;
+  top:-19px;
+  font-family:'Press Start 2P', cursive;
+  font-size: 10px;
+}
+
+
+
+h6{
+  position: absolute;
+  left:35px;
+  top:-14px;
+  font-family:'Press Start 2P', cursive;
+  font-size: 10px;
+  color:white;
+}
+
+
+
+.squre{
+  border: solid rgb(121, 124, 121) 3px;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left:0px;
+  top:1px;
+}
+}
+
+
+
+
+
+</style>
+
+
+  <body>
+
+    <section>
+      <div class="big">
+      <div class="blue">
+      <div class="close"><h4>X</h4></div>
+      <div class="max"><div class="squre"></div></div>
+      <div class="hide"><h5>_</h5></div>
+      <div class="title"><h6>Yukitabomb</h6></div>
+      <div class="bomb"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Gnome-gnomine.png"   style="width:26px;height:26px;"></div>
+
+      </div>
+      <div class="game"></div>
+      <h3>Game     Help</h3>
+
+      <div class="white">
+      <div class="grey"></div>
+
+
+
+        <div class="darkgrey">
+
+        <div class="left">
+        <h1>001</h1>
+      </div>
+        <div class="right">
+        <h2>002</h2></div>
+        </div>
+      <div class="middle"><img src="https://yt3.ggpht.com/a-/AJLlDp3Bs0U6q4E8O2pJjJ8yBt8clavEngOJO0KuVA=s900-mo-c-c0xffffffff-rj-k-no" style="width:55px;height:55px;"</div>
+
+      </div>
+
+
+      <div class="grids">
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/76px-Minesweeper_flag.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/76px-Minesweeper_flag.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/76px-Minesweeper_flag.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/76px-Minesweeper_flag.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/76px-Minesweeper_flag.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/76px-Minesweeper_flag.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minesweeper_2.svg/76px-Minesweeper_2.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Minesweeper_5.svg/76px-Minesweeper_5.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Minesweeper_7.svg/76px-Minesweeper_7.svg.png"   style="width:38.8px;height:38.8px;"></div>
+<div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/76px-Minesweeper_flag.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minesweeper_1.svg/76px-Minesweeper_1.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Minesweeper_4.svg/76px-Minesweeper_4.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/76px-Minesweeper_flag.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Minesweeper_6.svg/76px-Minesweeper_6.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Minesweeper_3.svg/76px-Minesweeper_3.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+  <div class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Minesweeper_0.svg/76px-Minesweeper_0.svg.png"   style="width:38.8px;height:38.8px;"></div>
+
+
+
+
+    </div>
+
+
+
+
+    </section>
