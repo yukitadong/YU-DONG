@@ -10,5 +10,7 @@ WEB PROGRAAMING 2018 WS
 *
 *
 *
-*
+*https://yukitadong.github.io/YU-DONG/w2/grids%20assigment.html
 * https://yukitadong.github.io/YU-DONG/w2/usa2.html
+* https://yukitadong.github.io/YU-DONG/w2/test.html
+
