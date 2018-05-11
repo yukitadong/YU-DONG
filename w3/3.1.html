@@ -1,0 +1,70 @@
+<html>
+  <head>
+      <style>
+        * { margin: 0; }
+        section { display: flex;
+
+           width: 100vw;
+        align-items: center;
+        }
+
+
+
+        section div { background: green;
+          height: calc(50vw*.667);
+
+
+           }
+        .green { background: green;
+          justify-content: center;
+          flex-grow:2,1,300vw;
+          flex-basis: 300px;
+          height: 100%;
+
+
+
+
+      }
+
+          .yellow { background: yellow;
+            justify-content: center;
+            flex:2 1 300px;
+
+              height: 100%; width: 100%;
+              display:flex;
+            }
+
+            .red{ background: red;
+              justify-content: center;
+              flex-shrink: 2;
+              flex-grow: 1;
+              flex-basis: 300px;
+                height: 100%;
+
+
+              }
+
+
+              @media (max-width: 600px) {
+                          .yellow {  background: pink;}
+                          section {  background: pink; flex-direction: column; }
+                          div { width: 100%; }
+                      }
+                      @media (min-width: 1200px) {
+                          .yellow {  background: blue;}
+                      }
+
+
+
+ }
+      </style>
+  </head>
+  <body>
+      <section>
+        <div class="green"></div>
+        <div class="yellow"><img src="star.svg" style"align-content:center "></div>
+        <div class="red"></div>
+
+      </section>
+  </body>
+<html>
