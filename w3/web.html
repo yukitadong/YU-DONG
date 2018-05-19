@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>change demo</title>
+  <style>
+
+
+
+  body{
+margin: 10px,10px,10px,10px;
+    background:
+     linear-gradient(#eee,blue);
+    height: 1400px;
+    width: auto;
+  }
+  div {
+    color: blue;
+    opacity: 50%;
+    font-size:200px;
+    display: grid;
+    float: left;
+
+  }
+
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<select name="side" multiple="multiple">
+  <option>A</option>
+  <option selected="selected">B</option>
+  <option>C</option>
+  <option selected="selected">D</option>
+
+</select>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+
+
+<script>
+$( "select" )
+  .change(function () {
+    var str = "";
+    $( "select option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+    $( "div" ).text( str );
+  })
+  .change();
+</script>
+
+</body>
+</html>
